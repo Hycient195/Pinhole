@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Web RTC</title>
+</head>
+<body>
+    <h1>Learning Web RTC</h1>
+    <div id="selectRoom">
+        <label for="roomNumber">Input room name</label>
+        <input type="text" id="roomNumber">
+        <button id="goRoom">Go</button>
+    </div>
+    <div class="consultingRoom">
+        <h2 class="callName"></h2>
+        <p>
+            <input type="text" class="inputCallName">
+            <button class="setName">Set Name</button>
+        </p>
+        <video src="" id="localVideo" autoplay></video>
+        <video src="" id="remoteVideo" autoplay></video>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+</body>                  
+</html>
